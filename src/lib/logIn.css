@@ -1,0 +1,81 @@
+:root {
+    --main-color: #FFD55F;
+    --secondary-color: #EEA0C7;
+    --green-buttons: #A3D35F;
+    --blue-color: #A5D7CE;
+    --orange-color: #F19E76;
+    --green-color: #C8EA9D;
+    --pink-color: #ED9FC6;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;  
+    word-break: break-all;
+}
+.contenedorL {
+    margin: auto;
+    padding: 20%;
+    background-color: var(--main-color);
+    justify-content: space-around;
+}
+.logoLogin {
+    background-color: var(--main-color);
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    justify-content: space-around;
+    
+}
+.imagenLogin {
+    width: 500px ; 
+    justify-content: center;
+    margin: auto;
+}
+
+.grid {
+    background-color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+    justify-content: space-around;
+    
+}
+.filded{
+    background-color: var(--main-color);
+    margin-top: 20px;
+    width: 300px;
+    height: 25px;
+    border-radius: 4px;
+    border: 2px solid white;
+    color: white;
+}
+::placeholder {
+    padding-left: 20px;
+    color: rgb(253, 253, 253);
+    opacity: 1; 
+}
+
+.sendButton {
+    background-color: var(--green-buttons);
+    margin-top: 20px;
+    width: 300px;
+    height: 25px;
+    border-radius: 4px;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid var(--green-buttons);
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer {
+    padding: 0.5em;
+    text-align: center;
+    background-color: rgb(250, 237, 119);
+}
