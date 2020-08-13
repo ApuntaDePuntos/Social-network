@@ -83,14 +83,14 @@ body {
     width: 25px;
     margin-right: 1em;
 }
-.itemName{
+.itemNameI{
     color: grey;
     height: 30px; 
     box-sizing: border-box; 
     margin: 1em;
     font-family: 'Montserrat', sans-serif;  
 }
-.itemDescription{
+.itemDescriptionI{
     color: grey; 
     box-sizing: border-box; 
     margin: 1em;

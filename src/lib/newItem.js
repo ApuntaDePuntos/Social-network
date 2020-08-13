@@ -15,7 +15,9 @@ export const NewItem = () => {
 <section class="grid">
 
     <div class='titleNewItem'>Nuevo Item</div>
+    <div>
     <img src="./Imagenes/camara.svg" class='botonCamara' alt="">
+    </div> 
     <input type="text" class='itemName' placeholder="Nombre"> 
     <input type="text" class='itemDescription' placeholder="Descripción"> 
 

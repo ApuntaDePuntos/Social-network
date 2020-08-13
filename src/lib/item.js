@@ -15,9 +15,9 @@ export const Item = () => {
   <div class='botones'>
   <img src="./Imagenes/pruebaImagen.jpg" class='imagenObjeto'>
   </div>
-  <p class='itemName'> Nombre del Objeto </p>
+  <p class='itemNameI'> Nombre del Objeto </p>
   <img class='like' src=./Imagenes/corazonRojo.svg></div>
-  <p class='itemDescription'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ad, commodi maxime sit culpa ex similique exercitationem, nobis quasi odit debitis accusamus vel temporibus aliquam possimus fugit, nam veritatis ea?  </p>
+  <p class='itemDescriptionI'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ad, commodi maxime sit culpa ex similique exercitationem, nobis quasi odit debitis accusamus vel temporibus aliquam possimus fugit, nam veritatis ea?  </p>
   </section>
   <section class="addMessage">
   <input type="text" class='comentario' placeholder="Agregar un comentario"> 

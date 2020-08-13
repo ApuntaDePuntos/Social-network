@@ -13,22 +13,22 @@ let views =
 </nav>
 <main class='contenedor>'>
 <section class="grid">
-  <section class = 'objeto'>
-  <div class='botones'>
-  <img src="./Imagenes/pruebaImagen.jpg" class='imagenObjeto'>
+  <section class = 'objetoE'>
+  <div class='botonesE'>
+  <img src="./Imagenes/pruebaImagen.jpg" class='imagenObjetoE'>
   </div>
-  <div class='botones'>
+  <div class='botonesE'>
   <img src="./Imagenes/Garbage.svg" class="garbageButton">
   <img src="./Imagenes/Pencil.svg" class="pencilButton">
   </div>
-  <p class='itemName'> Nombre del Objeto </p>
-  <p class='itemDescription'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ad, commodi maxime sit culpa ex similique exercitationem, nobis quasi odit debitis accusamus vel temporibus aliquam possimus fugit, nam veritatis ea?  </p>
+  <p class='itemNameE'> Nombre del Objeto </p>
+  <p class='itemDescriptionE'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ad, commodi maxime sit culpa ex similique exercitationem, nobis quasi odit debitis accusamus vel temporibus aliquam possimus fugit, nam veritatis ea?  </p>
   </section>
-  <section class="addMessage">
-  <input type="text" class='comentario' placeholder="Agregar un comentario"> 
-  <div class ='botonEnviarC'> Enviar </div>
+  <section class="addMessageE">
+  <input type="text" class='comentarioE' placeholder="Agregar un comentario"> 
+  <div class ='botonEnviarCE'> Enviar </div>
   </section>
-  <section class="comentarios">
+  <section class="comentariosE">
 
   </section>
 </section>
