@@ -58,6 +58,19 @@ body {
     background-color: var(--main-color);
     font-size: 10px;
 }
+.hero {
+    border-radius: var(--hero-border);
+    overflow: hidden;
+    background: var(--main-color);
+} 
+.imagenTop {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+}
 .grid {
     background-color: white;
     display: flex;
