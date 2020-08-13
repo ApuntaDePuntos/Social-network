@@ -1,3 +1,8 @@
+// import './lib/logIn.css'
+
+export const Login = () => {
+  // Este es el HTML despue ddel <Body> 
+  let views =
 `<main class="contenedorL"> 
 <section class="logoLogin">
   <img class="imagenLogin" src="imagenes/logo.png">
@@ -7,4 +12,8 @@
 <label><input type="password" id="contrasena" class="filded" placeholder="Password"> </label>
 <label><div class= 'sendButton' id = 'enviarLogin'>Enviar</div></label>
 </section>
-</main>`
+</main>`;
+let divElement = document.createElement('div');
+divElement.innerHTML = views
+return divElement
+}

@@ -1,4 +1,6 @@
-//Esto es HTML despues del <body> 
+export const Item = () => {
+  // Este es el HTML despue ddel <Body> 
+  let views =
 `<header class='header'>
 <a href="/"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
 </header>
@@ -35,4 +37,8 @@
 </section>
 
 </main>
-`
+`;
+let divElement = document.createElement('div');
+divElement.innerHTML = views
+return divElement
+}

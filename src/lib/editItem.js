@@ -1,5 +1,8 @@
+//import './lib/editItem.css'
 
+export const EditItem = () => {
 // Este es el HTML despue ddel <Body> 
+let views = 
 `<header class='header'>
 <a href="/"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
 </header>
@@ -31,4 +34,8 @@
 </section>
 
 </main>
-`
+` ;
+let divElement = document.createElement('div');
+divElement.innerHTML = views
+return divElement
+}

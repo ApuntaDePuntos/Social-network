@@ -1,5 +1,8 @@
+// import './lib/newItem.css'
 
-// Este es el HTML despues del <body>
+export const NewItem = () => {
+    // Este es el HTML despue ddel <Body> 
+    let views =
 `<header class='header'>
 <a href="/"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
 </header>
@@ -22,3 +25,9 @@
 
 </main>`
 // esto es antes del <footer>
+;
+let divElement = document.createElement('div');
+divElement.innerHTML = views
+return divElement
+
+}
