@@ -14,10 +14,10 @@ export const Home = () => {
 <main class='contenedor>'>
 <section class="grid">
   <label>
-    <div class='welcome' id='nameReplace'>Hola! tu XXX</div>
+    <div class='saludo' id='nameReplace'>Hola! tu XXX</div>
   </label>
 
-    <div class='newItemButton' id='nuevoItem'>Nuevo Item</div>
+    <div class='botonNuevoObjeto' id='nuevoItem'>Nuevo Item</div>
 
   <div class='fichaObjeto'>
     <div><img class='imgFichaObjeto' src=./Imagenes/pruebaImagen.jpg></div>

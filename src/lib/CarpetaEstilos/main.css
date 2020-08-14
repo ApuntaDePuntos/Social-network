@@ -1,0 +1,126 @@
+@import '/src/lib/CarpetaEstilos/variablesEstilo.css';
+@import '/src/lib/CarpetaEstilos/home.css';
+@import '/src/lib/CarpetaEstilos/editItem.css';
+
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;  
+    word-break: break-all;
+}
+.header {
+    background-color: var(--main-color);
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-around;
+    
+}
+.imagenP {
+    width: 50px ; 
+    justify-content: center;
+    margin: auto;
+}
+
+.nav {
+    background-color: var(--main-color);
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    justify-content: space-around;
+    
+}
+.botonBarra{
+    width: 30px;
+    justify-content: space-around;
+}
+.contenedor{
+    margin: auto;
+    padding: 20%;
+    background-color: white;
+    justify-content: space-around;
+}
+.footer {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: var(--main-color);
+    font-size: 10px;
+}
+.grid {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: auto;
+    justify-content: space-around;
+    
+}
+
+
+/* Edit Item */ 
+
+.imagenObjetoE{
+    width: 200px;
+    margin: 1em;
+}
+.botonesE{
+    display: flex;
+    justify-content: center;
+}
+.botonEditar{
+    width: 25px;
+
+}
+.botonBasurero{
+    width: 25px;
+    margin-right: 1em;
+}
+.editarNombreObjeto{
+    color: grey;
+    height: 30px; 
+    box-sizing: border-box; 
+    margin: 1em;
+    font-family: 'Montserrat', sans-serif;  
+}
+.editarDescripcionObjeto{
+    color: grey; 
+    box-sizing: border-box; 
+    margin: 1em;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 10px;
+    word-break: break-all
+}
+/*.agregarMensaje{
+    display: flex;
+    justify-content: space-around;
+}*/
+
+.editarComentario {
+    color: grey;
+    width: 280px;
+    height: 80px;
+    box-sizing: border-box; 
+    margin: 1em;
+    border: 1px solid var(--orange-color);
+    border-radius: 4px;
+    overflow: scroll;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px; 
+}
+
+.botonEnviarCE{
+    background-color: var(--orange-color);
+    margin: 0.5em;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid var(--orange-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}

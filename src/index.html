@@ -7,14 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>a Mano</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./lib/CarpetaEstilos/main.css">
   <link rel="stylesheet" href="./lib/editItem.css">
   <link rel="stylesheet" href="./lib/editProfile.css">
-  <link rel="stylesheet" href="./lib/home.css">
   <link rel="stylesheet" href="./lib/index.css">
   <link rel="stylesheet" href="./lib/item.css">
   <link rel="stylesheet" href="./lib/logIn.css">
   <link rel="stylesheet" href="./lib/newItem.css">
   <link rel="stylesheet" href="./lib/profile.css">
+
 </head>
 
 <body>
@@ -33,9 +34,42 @@
       <a href="#/edititem">Edit item</a>
       <a href="#/item">Item</a>
     </ul>
+
   </nav>
   <main>
     <section id='root'> </section>
+  </main>
+  *****
+
+  <main class='contenedor'>
+    <section class="grid">
+      <section class="mascara">
+        <img class='imagenTop' src="./Imagenes/portada.jpg">
+      </section>
+    </section>
+    <section class='misProductos'>
+      <div class= "espacioProducto" id="">
+        <img class= "imageProducto" src="./Imagenes/pruebaImagen.jpg">
+      <p class= "nombresProducto"> Hola Aca nombre</p> </p>  </div>
+    </section>
+
+    <section class="addMessage">
+      <input type="text" class='comentario' placeholder="Agregar un comentario">
+      <div class='botonEnviarC'> Enviar </div>
+    </section>
+    <section class="comentarios">
+
+      <div class='fichaComentario'>
+        <div><img class='imgComentario' src=./Imagenes/pruebaImagen.jpg></div>
+        <div class='infoComentario'>
+          <p class='nombreComentario'>Nombre Usuario </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum incidunt illo
+            dolores voluptatem voluptate tempore earum. Repellat numquam similique sit culpa itaque voluptate.</p>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 
   <footer class="footer">

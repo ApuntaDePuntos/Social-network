@@ -58,7 +58,7 @@ body {
     background-color: var(--main-color);
     font-size: 10px;
 }
-.hero {
+.mascara {
     border-radius: var(--hero-border);
     overflow: hidden;
     background: var(--main-color);
@@ -88,29 +88,9 @@ body {
     display: flex;
     justify-content: center;
 }
-.like{
-    width: 25px;
 
-}
-.garbageButton{
-    width: 25px;
-    margin-right: 1em;
-}
-.itemName{
-    color: grey;
-    height: 30px; 
-    box-sizing: border-box; 
-    margin: 1em;
-    font-family: 'Montserrat', sans-serif;  
-}
-.itemDescription{
-    color: grey; 
-    box-sizing: border-box; 
-    margin: 1em;
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 10px;
-    word-break: break-all
-}
+
+
 
 .comentario {
     color: grey;
@@ -136,6 +116,44 @@ body {
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
 }
+
+.espacioProducto {
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 10px -2px rgb(156, 66, 5);
+    color: black;
+    display: flex;
+    height: 250px;
+    width: 250px;  
+    justify-content: center;
+    padding: 1em 0  0 1em ;
+    box-sizing: border-box; 
+    margin: 1em;
+    border: 0;
+    flex-direction: column;
+    transition: box-shadow .3s ease;
+   
+}
+
+.espacioProducto:hover {
+  box-shadow: 0 2px 2px -2px rgb(87, 38, 6);
+}
+
+.nombresProducto {
+    font-size: 1em;
+    margin-top: 0.2em;
+    word-break: break-word;
+    text-size-adjust: auto;
+}
+
+.imageProducto {
+    margin-top: 8px; 
+    width: 160px ; 
+    text-size-adjust: auto;  
+    justify-content: center;
+    margin: auto;
+}
+
 
 
 .fichaComentario{
@@ -167,3 +185,5 @@ body {
 .nombreComentario {
     font-size: 14px;
 }
+
+
