@@ -8,8 +8,8 @@ export const NewItem = () => {
 </header>
 <nav class='nav'>
 <img class='botonBarra' src=./Imagenes/Arrow.svg>
-<img class='botonBarra' src="./Imagenes/home.svg">
-<img class='botonBarra' src="Imagenes/inicio.svg">
+<a href="#/home"> <img class='botonBarra' src="./Imagenes/home.svg"></a>
+<a href="#/profile"> <img class='botonBarra' src="Imagenes/inicio.svg"></a>
 </nav>
 <main class='contenedor>'>
 <section class="grid">
@@ -21,7 +21,7 @@ export const NewItem = () => {
     <input type="text" class='itemName' placeholder="Nombre"> 
     <input type="text" class='itemDescription' placeholder="Descripción"> 
 
-    <div class ='botonCrear'> Crear </div>
+    <a href="#/item"> <div class ='botonCrear'> Crear </div></a>
 
 </section>
 

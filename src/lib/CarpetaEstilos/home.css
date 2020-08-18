@@ -4,13 +4,16 @@
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;  
-    justify-content: flex-start;
+    justify-content: center;
 }
 @font-face{
     font-family: 'DK Lemon Yellow Sun';
     src: url(DKfont.otf);
 }
-
+.botonCentro{
+    display: flex;
+    justify-content: center;
+}
 .botonNuevoObjeto {
     background-color: var(--secondary-color);
     margin-top: 20px;

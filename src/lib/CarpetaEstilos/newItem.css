@@ -1,0 +1,57 @@
+@import '/src/lib/CarpetaEstilos/variablesEstilo.css';
+
+@font-face{
+    font-family: 'DK Lemon Yellow Sun';
+    src: url(DKfont.otf);
+}
+
+.titleNewItem{
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 25px;
+    padding: 5px;
+    color: white;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    font-family: 'DK Lemon Yellow Sun';
+    font-size: 30px;  
+}
+.botonCamara{
+    width: 50px;
+}
+.itemName{
+    color: grey;
+    height: 30px;
+    width:300px;  
+    box-sizing: border-box; 
+    margin: 1em;
+    border: 1px solid var(--main-color);
+    font-family: 'Montserrat', sans-serif;  
+}
+.itemDescription{
+    color: grey;
+    height: 150px;
+    width:300px;  
+    box-sizing: border-box; 
+    margin: 1em;
+    border: 1px solid var(--main-color);
+    overflow: scroll;
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.botonCrear{
+    background-color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}

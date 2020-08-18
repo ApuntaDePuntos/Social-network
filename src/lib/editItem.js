@@ -4,14 +4,14 @@ export const EditItem = () => {
 // Este es el HTML despue ddel <Body> 
 let views = 
 `<header class='header'>
-<a href="/"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
+<a href="#/home"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
 </header>
 <nav class='nav'>
 <img class='botonBarra' src=./Imagenes/Arrow.svg>
-<img class='botonBarra' src="./Imagenes/home.svg">
-<img class='botonBarra' src="Imagenes/inicio.svg">
+<a href="#/home"> <img class='botonBarra' src="./Imagenes/home.svg"></a>
+<a href="#/profile"> <img class='botonBarra' src="Imagenes/inicio.svg"></a>
 </nav>
-<main class='contenedor'>
+<main class='contenedor>'>
 <section class="grid">
   <section class = 'objetoE'>
   <div class='botonesE'>

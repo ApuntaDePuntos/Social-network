@@ -7,18 +7,17 @@ export const Home = () => {
 <a href="/"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
 </header>
 <nav class='nav'>
-<img class='botonBarra' src=./Imagenes/Arrow.svg>
-<img class='botonBarra' src=./Imagenes/home.svg>
-<img class='botonBarra' src=./Imagenes/edit.svg>
+<a href="#/editprofile"><img class='botonBarra' src=./Imagenes/edit.svg></a>
+<a href="#/profile"> <img class='botonBarra' src="Imagenes/inicio.svg"></a>
 </nav>
 <main class='contenedor>'>
 <section class="grid">
   <label>
     <div class='saludo' id='nameReplace'>Hola! tu XXX</div>
   </label>
-
-    <div class='botonNuevoObjeto' id='nuevoItem'>Nuevo Item</div>
-
+    <div class='botonCentro'>
+  <a href="#/newitem"><div class='botonNuevoObjeto' id='nuevoItem'>Nuevo Item</div></a>
+    </div>
   <div class='fichaObjeto'>
     <div><img class='imgFichaObjeto' src=./Imagenes/pruebaImagen.jpg></div>
     <div class ='infoFichaObjeto'>

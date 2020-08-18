@@ -6,8 +6,8 @@ export const Item = () => {
 </header>
 <nav class='nav'>
 <img class='botonBarra' src=./Imagenes/Arrow.svg>
-<img class='botonBarra' src="./Imagenes/home.svg">
-<img class='botonBarra' src="Imagenes/inicio.svg">
+<a href="#/home"> <img class='botonBarra' src="./Imagenes/home.svg"></a>
+<a href="#/profile"> <img class='botonBarra' src="Imagenes/inicio.svg"></a>
 </nav>
 <main class='contenedor>'>
 <section class="grid">
