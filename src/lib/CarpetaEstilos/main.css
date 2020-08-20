@@ -1,7 +1,13 @@
-@import '/src/lib/CarpetaEstilos/variablesEstilo.css';
-@import '/src/lib/CarpetaEstilos/home.css';
-@import '/src/lib/CarpetaEstilos/editItem.css';
+:root {
+    --main-color: #FFD55F;
+    --secondary-color: #EEA0C7;
+    --green-buttons: #A3D35F;
+    --blue-color: #A5D7CE;
+    --orange-color: #F19E76;
+    --green-color: #C8EA9D;
+    --pink-color: #ED9FC6;
 
+}
 
 body {
     background-color: white;

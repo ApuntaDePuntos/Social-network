@@ -19,9 +19,8 @@ let divElement = document.createElement('div');
 divElement.innerHTML = views
 return divElement
 }
-const datos= document.getElementById('formulario')
+/*const datos= document.getElementById('formulario')
 datos.addEventListener('submit',()=> {
   console.log('send')
-})
+})*/
 
-export datos
