@@ -1,3 +1,6 @@
+import {auth} from '../main.js';
+import {fs} from '../main.js';
+
 export const Item = () => {
   // Este es el HTML despue ddel <Body> 
   let views =
@@ -42,3 +45,6 @@ let divElement = document.createElement('div');
 divElement.innerHTML = views
 return divElement
 }
+
+//auth 
+//fs
