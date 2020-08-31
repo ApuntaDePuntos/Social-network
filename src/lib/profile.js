@@ -1,6 +1,10 @@
 // import './lib/profile.css'
+import {db} from "../main.js";
 
-export const Profile = () => {
+const obtenerObjetos = () => db.collection('objetos').get();
+
+export const Profile = async () => {
+
     // Este es el HTML despue ddel <Body> 
     let views =
         `<header class='header'>
@@ -53,3 +57,8 @@ export const Profile = () => {
     divElement.innerHTML = views
     return divElement
 }
+
+window.addEventListener('DOMContentLoaded' , async (e) => {
+  const todosLosObjetos = await obtenerObjetos();
+  todosLosObjetos.forEach( doc => console.log(doc.data())
+  )

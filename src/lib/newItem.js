@@ -43,9 +43,9 @@ export const nuevoItem = async () => {
         e.preventDefault();
         const nombreNuevoItem = document.getElementById('nombreNuevoItem').value;
         const descripcionNuevoItem = document.getElementById('descripcionNuevoItem').value;
-        db
-            .collection('objetos').doc().set(
-            {
+        //sacar funcion aparte main.js guardar obj 
+        db.collection('objetos').doc().set(
+            {   
                 nombreNuevoItem,
                 descripcionNuevoItem
             }

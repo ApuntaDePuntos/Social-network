@@ -79,3 +79,44 @@ body {
     text-align: center;
     background-color: rgb(250, 237, 119);
 }
+
+.containerModal{
+    top: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    opacity: 30;
+    transition: all 600ms; 
+  }
+
+
+  .containerModal:modalFormato .modalFormato{
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+  }
+  
+  .modalFormato{
+    background-color: var(--main-color);
+    align-items: center;
+    color : white; 
+    width: 100%;
+    max-width: 300px;
+    height: 500px;
+    justify-content: center;
+    border-radius: 1em;
+    box-sizing: border-box; 
+    margin: 1px;
+    border: 0;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    z-index: 299;
+
+  }

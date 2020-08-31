@@ -3,7 +3,7 @@
 export const Home = () => {
   // Este es el HTML despue ddel <Body> 
   let views =
-` <header class='header'>
+    ` <header class='header'>
 <a href="/"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
 </header>
 <nav class='nav'>
@@ -15,8 +15,8 @@ export const Home = () => {
   <label>
     <div class='saludo' id='nameReplace'>Hola! tu XXX</div>
   </label>
-    <div class='botonCentro'>
-  <a href="#/newitem"><div class='botonNuevoObjeto' id='nuevoItem'>Nuevo Item</div></a>
+    <div class='botonCentro' >
+  <button class='botonNuevoObjeto' id='nuevoItemBoton'>Nuevo Item</button>
     </div>
   <div class='fichaObjeto'>
     <div><img class='imgFichaObjeto' src=./Imagenes/pruebaImagen.jpg></div>
@@ -43,8 +43,16 @@ export const Home = () => {
 </section>
 
 </main>`;
-let divElement = document.createElement('div');
-divElement.innerHTML = views
-return divElement
+  let divElement = document.createElement('div');
+  divElement.innerHTML = views
+  return divElement
 }
 
+
+export const turnPageNewItem = async () => {
+  const nuevoItemBoton = document.getElementById('nuevoItemBoton');
+  nuevoItemBoton.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.hash = '#/newitem'; 
+  })
+}

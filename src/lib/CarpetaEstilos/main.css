@@ -241,7 +241,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     width: 300px;
-    height: 25px;
+    height: 30px;
     padding: 5px;
     border-radius: 4px;
     color: white;
@@ -250,7 +250,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'DK Lemon Yellow Sun';
-    font-size: 30px;  
+    font-size: 20px;  
 }
 
 .fichaObjeto{
