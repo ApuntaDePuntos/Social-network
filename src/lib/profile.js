@@ -1,13 +1,12 @@
 // import './lib/profile.css'
-import {db} from "../main.js";
+import { db } from "../main.js";
 
-const obtenerObjetos = () => db.collection('objetos').get();
 
 export const Profile = async () => {
 
-    // Este es el HTML despue ddel <Body> 
-    let views =
-        `<header class='header'>
+  // Este es el HTML despue ddel <Body> 
+  let views =
+    `<header class='header'>
     <a href="#/home"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
     </header>
     <nav class='nav'>
@@ -53,12 +52,7 @@ export const Profile = async () => {
 </section>
     </main>`;
 
-    let divElement = document.createElement('div');
-    divElement.innerHTML = views
-    return divElement
+  let divElement = document.createElement('div');
+  divElement.innerHTML = views
+  return divElement
 }
-
-window.addEventListener('DOMContentLoaded' , async (e) => {
-  const todosLosObjetos = await obtenerObjetos();
-  todosLosObjetos.forEach( doc => console.log(doc.data())
-  )

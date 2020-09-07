@@ -11,25 +11,6 @@ import {routes} from './router.js';
 export const auth = firebase.auth();
 export const db = firebase.firestore();
 
-export const guardarObjetosfs = ( nombreNuevoObjeto , descripcionNuevoObjeto ) => 
-db.collection('objetos').doc().set(
-    {
-        nombreNuevoObjeto ,
-        descripcionNuevoObjeto
-    }
-);
-/*
-export const obtenerObjetos = () => db.collection('objetos').get();
-
-export const cargarPaginaMostrar = () =>{ 
-window.addEventListener('DOMContentLoaded', async (e) => {
-    const objetosCompletos = await obtenerObjetos()
-    objetosCompletos.forEach ( doc => {console.log(doc.data())
-    })
-
-})
-}
-*/
 
 export const cambiarPagina = (stringHash) => { window.location.hash = stringHash}
 

@@ -74,6 +74,12 @@ body {
 
 }
 
+.parrafoRegistrarse{
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif; 
+    text-align: center;
+}
+
 .footer {
     padding: 0.5em;
     text-align: center;
@@ -99,7 +105,7 @@ body {
     top: 50%;
     left: 50%;
     transform: rotate(0deg) translate(-50%, -50%);
-    visibility: visible;
+    visibility: hidden;
   }
   
   .modalFormato{

@@ -1,15 +1,16 @@
 //import function datos (obj);
 import { auth } from '../main.js';
+import { FBcrearUsuario } from '../FireBaseFunciones/FBcrearUsuario.js';
+import { FBautenticar } from '../FireBaseFunciones/FBautenticar.js';
 
 // Modal Crear usuario Ventana DOM
 
 export const modalRegistro = async () => {
 
-let pruebamodal = document.getElementById('pruebamodal')
 let registro = 
-`<section type = modal id = 'modalFormato'>
+`<section type = modal id = 'modalFormato' class="gridLogin">
 
-<form class="gridLogin" id= 'formularioRegistro'>
+<form class="modal" id= 'formularioRegistro'>
 
 <label><input type="text" id="correoRegistro" class="filded" placeholder="Correo "></label>
 <label><input type="password" id="contrasenaRegistro" class="filded" placeholder="Contrasena"> </label>
@@ -20,28 +21,26 @@ let registro =
 </form>
 </section> `
 
-pruebamodal.innerHTML = registro;
+let divElement = document.createElement('div');
+divElement.innerHTML = registro
+return divElement
 }
 
 
 // Funcion capturar datos para crear cuenta. 
 
-export const datos = async () => {
+export const crearCuenta = async () => {
   const formularioRegistro = document.getElementById('formularioRegistro');
-  formularioRegistro.addEventListener('click', (e) => {
+  formularioRegistro.addEventListener('submit', (e) => {
     e.preventDefault();
     const correoRegistro = document.getElementById('correoRegistro').value;
     const contrasenaRegistro = document.getElementById('contrasenaRegistro').value;
     console.log(correoRegistro, contrasenaRegistro)
-    auth
-      .createUserWithEmailAndPassword(correoRegistro, contrasenaRegistro)
-      .then(userCredential => {
-        console.log('listo!')
-      })
-      document.getElementById("prueba").style.visibility = "visible";
-      document.getElementById("cerrarModal").addEventListener("click", function () {
-      document.getElementById("prueba").style.visibility = "hidden";
-})
+    FBcrearUsuario(correoRegistro, contrasenaRegistro)
+      //document.getElementById("pruebamodal").style.visibility = "visible";
+      //document.getElementById("cerrarModal").addEventListener("submit", function () {
+      //document.getElementById("pruebamodal").style.visibility = "hidden";
+//})
   })
 }
 
@@ -61,7 +60,8 @@ export const Login = async () => {
 <label><button type= 'submit' class= 'sendButton' id = 'enviarLogin'> Enviar </button>
 </form>
 
-<section > No tienes cuenta? <div type = button id = 'clickRegistro'> registrare Aqui </div> </section> 
+
+<section class= 'parrafoRegistrarse' > No tienes cuenta? <div type='button' id = 'clickRegistro'> registrare Aqui </div> </section> 
 
 
 </main>`;
@@ -83,17 +83,12 @@ export const autenticar = async () => {
     const correo = document.getElementById('correo').value;
     const contrasena = document.getElementById('contrasena').value;
     console.log(correo, contrasena)
-    auth
-      .signInWithEmailAndPassword(correo, contrasena)
-    console.log('check!')
-
-    auth.onAuthStateChanged((user) => {
-      if (user) { window.location.hash = '#/home'; }
-      else { window.location.hash = '#/'; }
-    })
+    FBautenticar(correo, contrasena)
   })
+
   const clickRegistro = document.getElementById('clickRegistro');
-  clickRegistro.addEventListener("click", (e) => modalRegistro);
+clickRegistro.addEventListener("click", (e) => modalRegistro);
 }
+
 
 

@@ -6,29 +6,38 @@ import { NewItem } from './lib/newItem.js';
 import { EditItem } from './lib/editItem.js';
 import { Item } from './lib/item.js';
 import { autenticar } from './lib/logIn.js';
+//import { MostrarModal } from './lib/logIn.js';
 import { modalRegistro } from './lib/logIn.js';
-import { datos } from './lib/logIn.js';
+import { crearCuenta } from './lib/logIn.js';
 import { nuevoItem } from './lib/newItem.js';
 import { turnPageNewItem } from './lib/home.js';
+import { cargarPaginaMostrar } from './FireBaseFunciones/FBobtenerObjetos.js';
+
 
 
 let contenedor = document.getElementById('root');
 let contenedorPrueba =  document.getElementById ('prueba'); 
+let contenedorPruebaModal = document.getElementById('pruebamodal')
 
 const routes = async(route) => {
     contenedor.innerHTML = ""; 
     contenedorPrueba.innerHTML = ""; 
+    contenedorPruebaModal.innerHTML = "";
     switch (route) {
         case '#/':  
                     const loginViews = await Login();
                     await contenedor.appendChild(loginViews) 
-                    await modalRegistro()
+                    const loginModal = await modalRegistro()
+                    //await MostrarModal()
+                    await contenedorPruebaModal.appendChild(loginModal) 
                     await autenticar()
-                    await datos() 
+                    await crearCuenta() 
                     break; 
         case '#/home':
                     const homeView =  await Home(); 
                     await contenedor.appendChild( homeView )
+                    const ObjetosView = await cargarPaginaMostrar()
+                    await contenedorPrueba.appendChild( ObjetosView )
                     await turnPageNewItem()
                     break;
         case '#/profile': 
