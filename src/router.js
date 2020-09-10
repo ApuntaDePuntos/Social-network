@@ -12,6 +12,8 @@ import { crearCuenta } from './lib/logIn.js';
 import { nuevoItem } from './lib/newItem.js';
 import { turnPageNewItem } from './lib/home.js';
 import { cargarPaginaMostrar } from './FireBaseFunciones/FBobtenerObjetos.js';
+import { obtenerObjetos } from './FireBaseFunciones/FBobtenerObjetos.js';
+import { db }from './main.js'
 
 
 
@@ -34,11 +36,13 @@ const routes = async(route) => {
                     await crearCuenta() 
                     break; 
         case '#/home':
+                    await db;
                     const homeView =  await Home(); 
-                    await contenedor.appendChild( homeView )
                     const ObjetosView = await cargarPaginaMostrar()
-                    await contenedorPrueba.appendChild( ObjetosView )
+                    await contenedor.appendChild( homeView )
+                    //await contenedorPrueba.appendChild( ObjetosView )
                     await turnPageNewItem()
+                    await obtenerObjetos()
                     break;
         case '#/profile': 
                     const profileViews = await Profile();

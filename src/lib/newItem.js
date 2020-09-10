@@ -54,3 +54,10 @@ export const nuevoItem = async () => {
         window.location.hash = "#/item"
     })
 }
+export const obtenerObjetos = async () => {
+    db.collection('objetos')
+    .get()
+    .then ((snapshot) => {
+      console.log (snapshot);
+      }) 
+    }

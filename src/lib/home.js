@@ -1,7 +1,20 @@
 // import './lib/home.css'
 
-export const Home = () => {
+import { obtenerObjetos } from '../FireBaseFunciones/FBobtenerObjetos.js';
+import { cargarPaginaMostrar } from '../FireBaseFunciones/FBobtenerObjetos.js';
+
+
+obtenerObjetos()
+  .then(function (querySnapshot) {
+    querySnapshot.forEach(function (doc) {
+      //console.log(doc.id, " => ", doc.data());
+      const infoCadaObjeto = doc.data()
+    });
+  });
+
+export const Home = async() => {
   // Este es el HTML despue ddel <Body> 
+  let post = await cargarPaginaMostrar()
   let views =
     ` <header class='header'>
 <a href="/"><img class='imagenP' src=./Imagenes/logoP.svg alt="home"></a>
@@ -17,28 +30,9 @@ export const Home = () => {
   </label>
     <div class='botonCentro' >
   <button class='botonNuevoObjeto' id='nuevoItemBoton'>Nuevo Item</button>
-    </div>
-  <div class='fichaObjeto'>
-    <div><img class='imgFichaObjeto' src=./Imagenes/pruebaImagen.jpg></div>
-    <div class ='infoFichaObjeto'>
-      <p class='nombreFichaObjeto'>Aca va el nombre </p> 
-      <img class='botonObjeto' src=./Imagenes/corazonRojo.svg>
-      <img class='botonObjeto' src=./Imagenes/comentario.svg>
-      <p class='textoFichaObjeto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum incidunt illo
-        dolores voluptatem voluptate tempore earum. Repellat numquam similique sit culpa itaque voluptate.</p>
-    </div>
-  </div>
+    </div>  
 
-  <div class='fichaObjeto'>
-    <div><img class='imgFichaObjeto' src=./Imagenes/pruebaImagen.jpg></div>
-    <div class ='infoFichaObjeto'>
-      <p class='nombreFichaObjeto'>Aca va el nombre </p> 
-      <img class='botonObjeto' src=./Imagenes/corazonRojo.svg>
-      <img class='botonObjeto' src=./Imagenes/comentario.svg>
-      <p class='textoFichaObjeto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum incidunt illo
-        dolores voluptatem voluptate tempore earum. Repellat numquam similique sit culpa itaque voluptate.</p>
-    </div>
-  </div>
+  ${post}
 
 </section>
 
@@ -53,6 +47,6 @@ export const turnPageNewItem = async () => {
   const nuevoItemBoton = document.getElementById('nuevoItemBoton');
   nuevoItemBoton.addEventListener('click', (e) => {
     e.preventDefault();
-    window.location.hash = '#/newitem'; 
+    window.location.hash = '#/newitem';
   })
 }
