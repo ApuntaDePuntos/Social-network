@@ -1,4 +1,3 @@
-// import './lib/home.css'
 
 import { obtenerObjetos } from '../FireBaseFunciones/FBobtenerObjetos.js';
 import { cargarPaginaMostrar } from '../FireBaseFunciones/FBobtenerObjetos.js';
@@ -12,7 +11,7 @@ obtenerObjetos()
     });
   });
 
-export const Home = async() => {
+export const Home = async () => {
   // Este es el HTML despue ddel <Body> 
   let post = await cargarPaginaMostrar()
   let views =
@@ -50,3 +49,18 @@ export const turnPageNewItem = async () => {
     window.location.hash = '#/newitem';
   })
 }
+
+export const AbrirPorId = async () => {
+  const botonesObjetos = document.querySelectorAll('.fichaObjeto')
+  botonesObjetos.forEach((elementoCadaBoton) => {
+    elementoCadaBoton.addEventListener("click", (e) =>  {
+      let itemId = e.currentTarget.id
+      localStorage.setItem ('itemId', itemId)
+      window.location.hash = '#/edititem';
+    }
+    )
+  })
+}
+
+
+

@@ -14,6 +14,9 @@ import { turnPageNewItem } from './lib/home.js';
 import { cargarPaginaMostrar } from './FireBaseFunciones/FBobtenerObjetos.js';
 import { obtenerObjetos } from './FireBaseFunciones/FBobtenerObjetos.js';
 import { db }from './main.js'
+import { AbrirPorId } from './lib/home.js';
+import { eliminarObjeto , editarComentario } from './lib/editItem.js';
+
 
 
 
@@ -43,6 +46,7 @@ const routes = async(route) => {
                     //await contenedorPrueba.appendChild( ObjetosView )
                     await turnPageNewItem()
                     await obtenerObjetos()
+                    await AbrirPorId()
                     break;
         case '#/profile': 
                     const profileViews = await Profile();
@@ -54,16 +58,18 @@ const routes = async(route) => {
                     break;
         case '#/newitem'   : 
                     const newItemView = await  NewItem();
-                    await  contenedor.appendChild( newItemView )
+                    await contenedor.appendChild( newItemView )
                     await nuevoItem()
                     break;
         case '#/edititem': 
                     const editItemView = await EditItem();
-                    await   contenedor.appendChild( editItemView )
+                    await contenedor.appendChild( editItemView )
+                    await eliminarObjeto()
+                    await editarComentario()
                     break;
         case '#/item': 
                     const itemView = await Item()
-                    await    contenedor.appendChild( itemView )
+                    await contenedor.appendChild( itemView )
                     break;
         //case '/register'   : return  { contenedor.appendChild( Register() )}
         //default : return console.log(404)

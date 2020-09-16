@@ -17,7 +17,8 @@ export const cargarPaginaMostrar = async () => {
   let view = '';
   querySnapshot.forEach ( doc => { 
         const infoCadaObjeto = doc.data()
-        view += ` <div class='fichaObjeto' id= "${infoCadaObjeto.id}">
+        infoCadaObjeto.id = doc.id; 
+        view += ` <button  class='fichaObjeto' id= "${infoCadaObjeto.id}">
                 <div><img class='imgFichaObjeto' src=./Imagenes/pruebaImagen.jpg></div>
                 <div class ='infoFichaObjeto'>
                 <p class='nombreFichaObjeto'> ${infoCadaObjeto.nombreNuevoItem} </p> 
@@ -25,7 +26,7 @@ export const cargarPaginaMostrar = async () => {
                 <img class='botonObjeto' src=./Imagenes/comentario.svg>
                 <p class='textoFichaObjeto'> ${infoCadaObjeto.descripcionNuevoItem} </p>
                 </div>
-                </div>`
+                </button>`
         
       })
       return view
@@ -35,7 +36,6 @@ export const cargarPaginaMostrar = async () => {
 
 
 /*
-
 export const cargarPaginaMostrar = () => {
 let view = `<h1> Hola! POST </h1/> `
 return view
